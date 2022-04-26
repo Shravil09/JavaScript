@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Example</title>
+</head>
+<body>
+    <h1>Strin Exercise</h1>
+    <script>
+        let s1 = "Java";
+        document.writeln("Concate() ==> " + s1.length); 
+        document.write("<br>");
+        document.writeln(s1.concat(" is Awesome"));
+        document.writeln("<br>");
+        document.writeln(s1.charAt(1));
+        document.writeln("<br>");
+        document.writeln(s1.concat(" is awesome").charAt(8));
+        document.writeln("<br>");
+
+        let s2 = "java";
+        document.writeln(s2.startsWith("J"));
+        document.writeln("<br>");
+        document.writeln(s1.toLowerCase());
+        document.writeln("<br>");
+        document.writeln(s1.toUpperCase());
+        document.writeln("<br>");
+        
+        let s4 = " java is awesome ";
+        document.writeln(s4.substring(8));
+        document.writeln("<br>");
+        document.writeln(s4.slice(9));
+        document.writeln(s4.replace('a', 'A'));
+        document.writeln("<br>");
+        
+        document.writeln(s4.trim().length);
+        document.writeln("<br>");
+        document.writeln(s4.indexOf('a'));
+        document.writeln("<br>");
+        document.writeln(s4.lastIndexOf('a'));
+        document.writeln("<br>");
+        
+    </script>
+</body>
+</html>

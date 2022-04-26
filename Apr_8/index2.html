@@ -1,0 +1,89 @@
+<!-- Event Capturing -->
+<!-- <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body{
+                padding: 100px;
+                background-color: cornsilk;
+            }
+            #myDiv{
+                padding: 50px;
+                background-color: darkblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="myDiv">
+            <button id="btn">Click Me</button>
+        </div>
+        <script>
+            let d = document.getElementById("myDiv");
+            let b = document.getElementById("btn");
+            b.addEventListener('click', btnClicked, true);
+            d.addEventListener('click', divClicked, true);
+            document.addEventListener('click', bodyClicked, true);
+            
+            function btnClicked(){
+                console.log("Button clicked");
+            }
+
+            function divClicked(){
+                console.log("Div clicked");
+            }
+
+            function bodyClicked(){
+                console.log("Body Clicked");
+            }
+        </script>
+    </body>
+    </html> -->
+
+<!-- Event Bubbling     -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body{
+                padding: 100px;
+                background-color: cornsilk;
+            }
+            #myDiv{
+                padding: 50px;
+                background-color: darkblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="myDiv">
+            <button id="btn">Click Me</button>
+        </div>
+        <script>
+            let d = document.getElementById("myDiv");
+            let b = document.getElementById("btn");
+            b.addEventListener('click', btnClicked);
+            d.addEventListener('click', divClicked);
+            document.addEventListener('click', bodyClicked);
+            
+            function btnClicked(){
+                console.log("Button clicked");
+            }
+
+            function divClicked(){
+                console.log("Div clicked");
+            }
+
+            function bodyClicked(){
+                console.log("Body Clicked");
+            }
+        </script>
+    </body>
+    </html>

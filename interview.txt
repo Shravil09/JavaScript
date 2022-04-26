@@ -1,0 +1,117 @@
+// object related question
+   ***********************
+
+    let obj1 = {name:'CK'};
+    let obj2 = {name:'CK'};
+
+    console.log(obj1 == obj2);  // false
+    console.log(obj1 === obj2); // false
+
+    let obj3 = obj2;
+    console.log(obj3 === obj2); // true
+
+    let arr1 = ["sports","cooking"];
+    let arr2 = ["sports", "cooking1"];
+
+    console.log(arr1 == arr2); // false
+    let arr3 = arr2;
+    console.log(arr3 == arr2); // true
+    console.log(arr1 == arr2); // false
+    console.log(arr1 === arr2); // false
+
+// Operator precedence determines how operators are parsed concerning each other    
+
+    console.log(3 + 4 * 5); // 3 + 20
+    // expected output: 23
+
+    console.log(4 * 3 ** 2); // 4 * 9
+    // expected output: 36
+
+    let a;
+    let b;
+
+    console.log(a = b = 5);
+    // expected output: 5
+
+/*
+// !!
+    let userInput = "";
+    //let isUserInput = userInput ? true : false;
+    let isUserInput = !!userInput;
+    console.log(isUserInput);
+    if (isUserInput) {
+        console.log("this is true");
+        } 
+        else {
+            console.log("this is false");
+        }
+*/
+/*
+    let var1 = 1;
+    let var2 = 0;
+    let isTrue = var1 || var2 || "Bhavesh";
+    console.log(isTrue);
+*/
+
+/*
+    let realUserName = "";
+    let userName = realUserName || "CK";
+    console.log(userName);                             // ck
+*/
+
+// && used for assigning value when first one is true
+/*
+    let isLoggedin = true;
+    let shoppingCart = isLoggedin && ["Books, Fruits"];
+    //let shoppingCart = isLoggedin &&
+    console.log(shoppingCart);                        // ["Books, Fruits"]
+*/
+
+/*
+    if(1){
+        console.log("Yes");                     // yes
+    }
+    else
+        console.log("No");
+*/
+
+/*
+    if(undefined){
+        console.log("This is true");
+    }
+    else{
+        console.log("This is false");           // This is false 
+    }
+*/
+/*
+    if({}){
+        console.log("This is true");              // This is true
+    }
+    else{
+        console.log("This is false");
+    }
+*/
+
+/*
+    let val;
+    if(val){
+        console.log("This is Defined");
+    }
+    else{
+        console.log("This is Unefined");        // This is Unefined
+}
+*/
+
+/*
+    //let isLoggedin = 1;
+    let isLoggedin = NaN;
+
+    if(isLoggedin){
+        shoppingCart = isLoggedin;               // 1
+    }
+    else{
+        shoppingCart = ["Book", "Physics"];     // if NaN ["Book", "Physics"];
+    }
+    console.log(shoppingCart);
+*/
+

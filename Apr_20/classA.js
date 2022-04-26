@@ -1,0 +1,1 @@
+export let var_one = 'Hello_1';
